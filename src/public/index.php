@@ -76,7 +76,9 @@ $app->post('/uncommon_abbreviation', function (
         200
     );
 });
-
+/**
+ * Update meaning
+ */
 $app->put('/uncommon_abbreviation/update/meaning/{abbreviation}', function (
     ServerRequestInterface $request,
     ResponseInterface $response,
@@ -91,7 +93,9 @@ $app->put('/uncommon_abbreviation/update/meaning/{abbreviation}', function (
         200
     );
 });
-
+/**
+ * Append meaning
+ */
 $app->put('/uncommon_abbreviation/append/meaning/{abbreviation}', function (
     ServerRequestInterface $request,
     ResponseInterface $response,
@@ -106,7 +110,9 @@ $app->put('/uncommon_abbreviation/append/meaning/{abbreviation}', function (
         200
     );
 });
-
+/**
+ * Delete abbreviation
+ */
 $app->delete('/uncommon_abbreviation/{abbreviation}', function (
     ServerRequestInterface $request,
     ResponseInterface $response,
@@ -120,7 +126,9 @@ $app->delete('/uncommon_abbreviation/{abbreviation}', function (
         201
     );
 });
-
+/**
+ * list abbreviation
+ */
 $app->get('/uncommon_abbreviation', function (
     ServerRequestInterface $request,
     ResponseInterface $response
@@ -132,7 +140,9 @@ $app->get('/uncommon_abbreviation', function (
         201
     );
 });
-
+/**
+ * Get single abbreviation
+ */
 $app->get('/uncommon_abbreviation/{abbreviation}', function (
     ServerRequestInterface $request,
     ResponseInterface $response,
@@ -146,7 +156,9 @@ $app->get('/uncommon_abbreviation/{abbreviation}', function (
         201
     );
 });
-
+/**
+ * Upload image
+ */
 $app->post('/image', function (
     ServerRequestInterface $request,
     ResponseInterface $response,
@@ -163,7 +175,10 @@ $app->post('/image', function (
             201
         );
 });
-
+/**
+ * Convert an uploaded image
+ * to binary
+ */
 $app->post('/image_processor/convert_to_binary', function (
     ServerRequestInterface $request,
     ResponseInterface $response,
@@ -190,7 +205,9 @@ $app->post('/image_processor/convert_to_binary', function (
         201
     );
 });
-
+/**
+ * Segment line
+ */
 $app->post('/image_processor/segment_lines', function (
     ServerRequestInterface $request,
     ResponseInterface $response,
@@ -218,7 +235,9 @@ $app->post('/image_processor/segment_lines', function (
             201
         );
 });
-
+/**
+ * Segment words
+ */
 $app->post('/image_processor/segment_words', function (
     ServerRequestInterface $request,
     ResponseInterface $response,
@@ -244,7 +263,9 @@ $app->post('/image_processor/segment_words', function (
         201
     );
 });
-
+/**
+ * Segment characters
+ */
 $app->post('/image_processor/segment_characters', function (
     ServerRequestInterface $request,
     ResponseInterface $response,
@@ -270,7 +291,10 @@ $app->post('/image_processor/segment_characters', function (
         201
     );
 });
-
+/**
+ * Get image
+ * by name
+ */
 $app->get('/image/{imageFile}', function (
     ServerRequestInterface $request,
     ResponseInterface $response,
