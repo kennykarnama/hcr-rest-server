@@ -1,0 +1,22 @@
+<phpunit bootstrap="./test/bootstrap.php">
+  <testsuites>
+    <testsuite name="image_stream">
+      <file>./test/Unit/ImageStreamTest.php</file>
+    </testsuite>
+     <testsuite name="image">
+      <file>./test/Unit/ImageTest.php</file>
+    </testsuite>
+     <testsuite name="image_processor">
+      <file>./test/Unit/ImageProcessorTest.php</file>
+    </testsuite>
+    <testsuite name="json_mapper">
+      <file>./test/Unit/JsonMapperTest.php</file>
+    </testsuite>
+    <testsuite name="config_mapper">
+      <file>./test/Unit/ConfigMapperTest.php</file>
+    </testsuite>
+    <testsuite name="helper">
+      <file>./test/Unit/HelperTest.php</file>      
+    </testsuite>
+  </testsuites>
+</phpunit>

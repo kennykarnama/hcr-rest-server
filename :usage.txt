@@ -1,0 +1,21 @@
+langkah - langkah menjalankan aplikasi :
+
+1. Upload gambar pakai url :
+/image, post dengan body 
+{
+  key:"YOUR_UNIQUE_KEY",
+  sampel_gambar:"YOUR IMAGE"	
+}
+
+2. Convert gambar td yang udh di upload 
+/image_processor/convert_to_binary, post 
+dengan body {
+ key:"YOUR_UNIQUE_KEY_USED_BEFORE"
+}
+
+3. Segment baris, 
+/image_processor/segment_lines, post
+
+4. Segment kata
+/image_processor/segment_words, get
+
